@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo installing serverless
+      - sudo apt-get update
+      - sudo apt-get install nodejs -y
+      - npm install -g serverless
+
+  pre_build:
+    commands:
+      - echo nothing to do on prebuild
+
+  build:
+    commands:
+      - echo deployment started on `date`
+      - serveless deploy
+
+  post_build:
+    commands:
+      - echo deployment completed on `date`
