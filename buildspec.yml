@@ -3,9 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo installing serverless
+      - echo installing nodejs
       - sudo apt-get update
-      - sudo apt-get install nodejs -y
+      - curl -s https://deb.nodesource.com/setup_16.x | sudo bash
+      - sudo apt install nodejs -y
+      - node -v
+      - echo installing serverless
       - npm install -g serverless
 
   pre_build:
