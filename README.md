@@ -1,2 +1,3 @@
 # sls-cicd-test
-Test CICD with serverless framework
+
+Deploy Lambda function using CICD and serverless framework
