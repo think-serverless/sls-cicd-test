@@ -13,7 +13,7 @@ phases:
 
   pre_build:
     commands:
-      - echo nothing to do on prebuild
+      - echo key to be setup for pre build
       - export AWS_ACCESS_KEY_ID=$KEY
       - export AWS_SECRET_ACCESS_KEY=$SECRET
       - export AWS_DEFAULT_REGION=ap-south-1
